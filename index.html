@@ -9,33 +9,75 @@
 </head>
 <body>
     <header id="header">
+        <div class="brand">
+            <h1>Adam Johnson Photography</h1>
+            <img id="header-img" src="https://img.icons8.com/ios-filled/512/compact-camera.png">
+        </div>
         <nav id="nav-bar">
-            <a href="#section" class="nav-link"></a>
-            <a href="#section" class="nav-link"></a>
-            <a href="#section" class="nav-link"></a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+            <a href="#contact" class="nav-link">Contact Us</a>
         </nav>
-        <img src="" alt="" id="header-img">
     </header>
     <main>
-        <section id="about">
-            <aside>
-                <video src="" id="video"></video>
-            </aside>
-            <article></article>
+        <section class="hero">
+            <h1>Photography Lessons</h1>
         </section>
-        <section></section>
-        <section>
-            <form action="" id="form">
-                <input type="email" name="" id="email" placeholder="Email">
-                <input type="submit" value="" id="submit">
+        <section id="about" class="container">
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis itaque, eos quaerat voluptate ab accusantium alias, fuga veniam, tempore maxime commodi. Repudiandae voluptatem ratione dolores ex aspernatur repellat, quaerat, quasi perferendis blanditiis doloribus praesentium, voluptas omnis nemo expedita excepturi officia sequi optio sapiente aliquid accusamus nulla adipisci. Harum repellat, laudantium magni fuga doloremque voluptates a ullam itaque eligendi, odit, maiores mollitia possimus placeat voluptatibus exercitationem explicabo nihil labore. Nostrum molestiae deleniti ex aliquam quaerat blanditiis.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sint totam, doloribus quia fugiat odit dolore. Temporibus soluta deserunt recusandae perspiciatis animi illum magni commodi distinctio doloremque rem sapiente fugiat eaque nemo cupiditate, ipsa quidem vel itaque, praesentium id nam ullam vitae quos? A fugit nam, possimus ipsum temporibus impedit!</p>
+            </article>
+            <aside>
+                <iframe src="https://www.youtube.com/embed/MFLVmAE4cqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+            </aside>
+        </section>
+        <section id="pricing" class="container">
+            <div class="card">
+                <h2>1 Day Leeson</h2>
+                <h2>$400</h2>
+                <ul>
+                    <li>1 Location</li>
+                    <li>Lesson on Camera Settings</li>
+                    <li>8 hours of tutorials</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>3 day Lesson</h2>
+                <h2>$1000</h2>
+                <ul>
+                    <li>3 Locations</li>
+                    <li>Lesson on Camera settings and Maintence</li>
+                    <li>23 hours of tutorials</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>5 day Leeson</h2>
+                <h2>$1700</h2>
+                <ul>
+                    <li>5 Locations</li>
+                    <li>Lessons on trip preparation</li>
+                    <li>40 hours of tutorials and mentoring</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="container">
+            <h1>Book Your trip today</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet tempore blanditiis aliquid. Voluptates perferendis architecto, nam id iure reprehenderit, dolorum alias voluptate aliquam, eum nihil?</p>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="submit" value="Contact Me Today" id="submit" onclick="window.location.href='www.freecodecamp.com/email-submit';" required>
             </form>
         </section>
     </main>
+    <footer>
+        <p>This site was build for the puerpose of finishing the freeCodeCamp certification</p>
+    </footer>
+    
 </body>
 </html>
 <!-- 
-    The #email input field uses HTML5 validation to confirm that the entered text is an email address
-    When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)
     The navbar should always be at the top of the viewport
     Your product landing page should have at least one media query
     Your product landing page should utilize CSS flexbox at least once
