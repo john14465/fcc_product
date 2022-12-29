@@ -9,7 +9,7 @@ html {
 }
 
 section {
-    padding: 30px 20px;
+    padding: 60px 20px 30px 20px;
 }
 
 .container {
@@ -65,10 +65,11 @@ section {
     display: flex;
     width: 100%;
     height: 50vh;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background-image: url("https://images.pexels.com/photos/1460222/pexels-photo-1460222.jpeg");
-    background-position: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     h1 {
@@ -92,15 +93,17 @@ section {
         iframe {
             width: 90%;
             height: 100%;
-
+            border-radius: 10px;
         }
     }
 }
 
 // Pricing Section
 
-#pricing {
+.grid-container {
     display: grid;
+    max-width: 947px;
+    margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     .card {
@@ -116,6 +119,85 @@ section {
         }
         ul {
             width: 70%;
+        }
+    }
+}
+
+// contact Section
+
+#contact {
+    h1 {
+        text-align: center;
+        margin: 20px 0;
+    }
+    p {
+        margin: 20px 0;
+    }
+}
+
+#form {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    flex-direction: column;
+    h2 {
+        text-align: center;
+        margin-bottom: 10px;
+
+    }
+    input {
+        margin: 10px;
+        width: 75%;
+        margin: 10px auto;
+        &[type="email"] {
+            padding: 10px 20px;
+            border-radius: 30px;
+            box-shadow: inset 1px 1px 5px #000;
+        }
+        &[type="submit"] {
+            width: 40%;
+            padding: 20px 10px;
+            border-radius: 40px;
+            border: none;
+            background-color: #ff0000;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+}
+
+// footer
+
+footer {
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+@media  (max-width: 412px) {
+    #about {
+        grid-template-columns: 1fr;
+        #video {
+            margin-top: 30px;
+        }
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        .card {
+            margin-bottom: 20px;
+        }
+    }
+
+    #form {
+        width: 80%;
+        input[type="submit"] {
+            width: 60%;
         }
     }
 }
